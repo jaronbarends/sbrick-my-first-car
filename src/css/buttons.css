@@ -1,0 +1,27 @@
+/*-- Start buttons --*/
+
+	.btn {
+		display: inline-block;
+		border: none;
+		padding: 0.5em 0.75em;
+		background: cornflowerblue;
+		font: inherit;
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.btn--start {
+		background: seagreen;
+	}
+
+	.btn--connect {
+		min-width: 10em;
+	}
+
+	.btn--stop,
+	.btn--disconnect {
+		background: crimson;
+	}
+
+/*-- End buttons --*/

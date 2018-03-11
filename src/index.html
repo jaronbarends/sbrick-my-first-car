@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="nl-nl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>SBrick My first car</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/connection.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/log-window.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+
+	<div class="viewport">
+
+		<!-- Start connect screen -->
+
+			<div id="connect-screen" class="screen connect-screen">
+
+				<div class="busy-indicator">&ndash; connecting to Lego &ndash;</div>
+
+				<button id="connect-btn" class="btn btn--start btn--connect">
+					Connect
+				</button>
+
+			</div><!-- /.connect-screen -->
+
+		<!-- End connect screen -->
+
+		
+		<!-- Start main screen -->
+
+			<div id="main-screen" class="screen main-screen is-hidden">
+				<p>
+					<button id="start-all" class="btn">Start</button>
+				</p>
+
+				<!-- <p>
+					<button id="start-lights" class="btn">Lights (top left)</button>
+				</p>
+				<p>
+					<button id="start-drive" class="btn">Drive (bottom left)</button>
+				</p>
+				<p>
+					<button id="start-servo" class="btn">Start servo (top right)</button>
+				</p>
+				<p>
+					<button id="start-sensor" class="btn">Start sensor (bottom right)</button>
+				</p>
+				-->
+				<p>
+					<button id="stop-all" class="btn btn--stop">Stop</button>
+				</p>
+				<!-- <button id="stop-sensor" class="btn btn--stop">Stop sensor (bottom right)</button> -->
+				<p>
+					<button id="disconnect-btn" class="btn btn--disconnect">Disconnect</button>
+				</p>
+
+			</div>
+
+		<!-- Start main screen -->
+
+
+		<!-- Start logging window -->
+			<div id="log-window" class="log-window">
+				<a href="#" id="clear-log">clear</a>
+				<div id="log-msg-box"></div>
+			</div>
+		<!-- End logging window -->
+
+	</div><!-- /.viewport -->
+
+	<!-- vendor scripts -->
+		<script src="js/vendor/promise-queue.js"></script>
+		<script src="js/vendor/bluetooth.js"></script>
+		<script src="js/vendor/bluetooth-dummy.js"></script>
+		<script src="js/vendor/sbrick.js"></script>
+
+	<!-- own scripts -->
+		<script src="js/SBrickExtended.js"></script>
+		<script src="js/util.log.js"></script>
+
+		<script src="js/car-view.js"></script>
+		<script src="js/car-model.js"></script>
+		<script src="js/car-controller.js"></script>
+		<script src="js/connection.js"></script>
+</body>
+</html>
